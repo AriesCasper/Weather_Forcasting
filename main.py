@@ -10,6 +10,9 @@ def get_weather_forecast(city):
         response = requests.get(url)
         data = response.json()
 
+        # hi i have added to this code .
+        # welcome to weather forecasting.
+
         # Check if the API response was successful
         if response.status_code == 200:
             # Extract relevant information from the response
@@ -24,7 +27,7 @@ def get_weather_forecast(city):
             print(f"Humidity: {humidity}%")
         else:
             print("Error occurred while fetching weather data. Please try again.")
-
+# here is an f string implementation
     except requests.exceptions.RequestException as e:
         print(f"An error occurred: {e}")
 
